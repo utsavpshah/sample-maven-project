@@ -48,6 +48,6 @@ jobs:
         uses: actions/github-script@v4
         with:
           script: |
-            const options = '${{ needs.options.outputs.options }}'.split('\n');
+            const options = '${{ needs.build.outputs.options }}'.split('\n');
             const choice = await github.prompt("Select an option:", options);
             console.log(choice);
