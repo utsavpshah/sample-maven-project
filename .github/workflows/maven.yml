@@ -40,7 +40,7 @@ jobs:
 
   
   prompt:
-    needs: options
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Choose Option
